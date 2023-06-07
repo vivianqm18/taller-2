@@ -1,0 +1,34 @@
+Algoritmo CalcularValores
+    // Declarar variables
+    Definir a Como Entero
+    Definir d Como Real
+
+    // Inicializar variables
+    a = 1
+    d = 1.0
+
+    // Calcular y mostrar el valor de a en la primera expresión
+    a = 46 MOD 9 + 4 * 4 - 2
+    Escribir "El valor de a es: ", a
+
+    // Calcular y mostrar el valor de a en la segunda expresión
+    a = 45 + 43 MOD 5 * (23 * 3 MOD 2)
+    Escribir "El valor de a es: ", a
+
+    // Calcular y mostrar el valor de a en la tercera expresión
+    a = 45 + 45 * 50 MOD (a - 1)
+    Escribir "El valor de a es: ", a
+
+    // Calcular y mostrar el valor de d en la cuarta expresión
+    d = 1.5 * 3 + (++d)
+    Escribir "El valor de d es: ", d
+
+    // Calcular y mostrar el valor de d en la quinta expresión
+    d = 1.5 * 3 + (d++)
+    Escribir "El valor de d es: ", d
+
+    // Calcular y mostrar el valor de a en la sexta expresión
+    a %= 3 / a + 3
+    Escribir "El valor de a es: ", a
+
+FinAlgoritmo
