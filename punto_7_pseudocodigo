@@ -1,0 +1,45 @@
+Algoritmo CalculoNomina
+    // Declarar variables
+    Definir sueldo_base, complemento_destino, complemento_cargo_academico Como Real
+    Definir horas_extra, hijos, mayores_dependientes Como Entero
+    Definir sueldo_bruto, impuestos, retencion_irpf, sueldo_neto Como Real
+
+    // Solicitar los datos al usuario
+    Escribir "Sueldo base: "
+    Leer sueldo_base
+    Escribir "Complemento de destino: "
+    Leer complemento_destino
+    Escribir "Complemento de cargo académico: "
+    Leer complemento_cargo_academico
+    Escribir "Horas extra realizadas: "
+    Leer horas_extra
+    Escribir "Hijos: "
+    Leer hijos
+    Escribir "Mayores: "
+    Leer mayores_dependientes
+
+    // Calcular el sueldo bruto
+    sueldo_bruto = sueldo_base + complemento_destino + complemento_cargo_academico + (23 * horas_extra)
+
+    // Calcular los impuestos (IRPF)
+    impuestos = 24  // Porcentaje inicial sin hijos ni mayores dependientes
+    impuestos = impuestos - (2 * hijos)  // Restar 2 puntos por cada hijo
+    impuestos = impuestos - (1 * mayores_dependientes)  // Restar 1 punto por cada mayor dependiente
+    retencion_irpf = (impuestos / 100) * sueldo_bruto
+
+    // Calcular el sueldo neto
+    sueldo_neto = sueldo_bruto - retencion_irpf
+
+    // Mostrar los resultados
+    Escribir "Cálculo de la nómina:"
+    Escribir "Sueldo base: ", sueldo_base, " $"
+    Escribir "Complemento de destino: ", complemento_destino, " $"
+    Escribir "Complemento de cargo académico: ", complemento_cargo_academico, " $"
+    Escribir "Horas extra realizadas: ", horas_extra
+    Escribir "Hijos: ", hijos
+    Escribir "Mayores: ", mayores_dependientes
+    Escribir "Sueldo bruto: ", sueldo_bruto, " $"
+    Escribir "Porcentaje de IRPF: ", impuestos, "%"
+    Escribir "Retención por IRPF: ", retencion_irpf, " $"
+    Escribir "Sueldo neto: ", sueldo_neto, " $"
+FinAlgoritmo
