@@ -1,0 +1,16 @@
+Algoritmo calcularAreaTriangulo
+    Definir lado1, lado2, angulo, area como números reales
+
+    Escribir "Ingrese el valor del lado 1: "
+    Leer lado1
+
+    Escribir "Ingrese el valor del lado 2: "
+    Leer lado2
+
+    Escribir "Ingrese el valor del ángulo entre los lados (en radianes): "
+    Leer angulo
+
+    area <- 0.5 * lado1 * lado2 * Seno(angulo)
+
+    Escribir "El área del triángulo es: " + area
+FinAlgoritmo
