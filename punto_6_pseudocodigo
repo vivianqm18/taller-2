@@ -1,0 +1,23 @@
+Algoritmo CalcularValorF
+    // Declarar variables
+    Definir x Como Entero
+    Definir sigma Como Real
+    Definir y Como Entero
+    Definir lambda Como Real
+    Definir alfa Como Real
+    Definir f Como Real
+
+    // Inicializar variables
+    x = 12
+    sigma = 2.1836
+    y = 3
+    lambda = 1.11695
+    alfa = 328.67
+
+    // Calcular el valor de f
+    f = 3 * ((x + sigma * y) / (x * x - y * y)) - lambda * (alfa - 13.7)
+
+    // Mostrar el valor de f
+    Escribir "El valor de f es: ", f
+
+FinAlgoritmo
