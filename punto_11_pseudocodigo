@@ -1,0 +1,37 @@
+Algoritmo prestamoHipotecario
+    Definir capital, interes_anual, cuota_mensual, total_pagado, amortizacion, interes como números reales
+    Definir anios, meses como números enteros
+
+    Escribir "Ingrese el capital prestado: "
+    Leer capital
+
+    Escribir "Ingrese el interés anual: "
+    Leer interes_anual
+
+    Escribir "Ingrese el número de años del préstamo: "
+    Leer anios
+
+    meses <- anios * 12
+    ratio <- interes_anual / (12 * 100)
+
+    cuota_mensual <- (capital * ratio * Potencia(1 + ratio, meses)) / (Potencia(1 + ratio, meses) - 1)
+    total_pagado <- cuota_mensual * meses
+    amortizacion <- capital
+    interes <- 0
+
+    Escribir ""
+    Escribir "Cuota mensual: " + cuota_mensual
+    Escribir "Total pagado al finalizar el plazo: " + total_pagado
+    Escribir ""
+
+    Escribir "Detalle de pagos:"
+    Escribir "Mes" + Tab + "Amortización" + Tab + "Intereses" + Tab + "Saldo pendiente"
+
+    Para i <- 1 Hasta meses Hacer
+        interes <- amortizacion * ratio
+        amortizacion <- cuota_mensual - interes
+        capital <- capital - amortizacion
+
+        Escribir i + Tab + amortizacion + Tab + interes + Tab + capital
+    FinPara
+FinAlgoritmo
