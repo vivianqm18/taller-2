@@ -1,0 +1,33 @@
+Algoritmo CalcularNotaFinal
+    // Declarar variables
+    Definir nota_examen1, nota_examen2, nota_examen_final Como Real
+    Definir nota_practica1, nota_practica2, nota_practica3 Como Real
+    Definir nota_actividad_adicional Como Real
+    Definir nota_final Como Real
+
+    // Solicitar las calificaciones al usuario
+    Escribir "Ingrese la calificación del primer examen: "
+    Leer nota_examen1
+    Escribir "Ingrese la calificación del segundo examen: "
+    Leer nota_examen2
+    Escribir "Ingrese la calificación del examen final: "
+    Leer nota_examen_final
+
+    Escribir "Ingrese la calificación de la primera práctica: "
+    Leer nota_practica1
+    Escribir "Ingrese la calificación de la segunda práctica: "
+    Leer nota_practica2
+    Escribir "Ingrese la calificación de la tercera práctica: "
+    Leer nota_practica3
+
+    Escribir "Ingrese la calificación de la actividad adicional: "
+    Leer nota_actividad_adicional
+
+    // Calcular la nota final
+    nota_final = nota_examen1 + nota_examen2 + nota_examen_final +
+                 nota_practica1 + nota_practica2 + nota_practica3 +
+                 nota_actividad_adicional
+
+    // Mostrar la nota final obtenida
+    Escribir "La nota final obtenida es: ", nota_final
+FinAlgoritmo
