@@ -1,0 +1,18 @@
+Algoritmo ConversionTiempo
+    // Declarar variables
+    Definir segundos, horas, minutos, resto Como Entero
+
+    Escribir "Ingrese el tiempo transcurrido en segundos: "
+    Leer segundos
+
+    // Calcular las horas
+    horas = segundos / 3600  // 1 hora tiene 3600 segundos
+    resto = segundos % 3600
+
+    // Calcular los minutos
+    minutos = resto / 60  // 1 minuto tiene 60 segundos
+    segundos = resto % 60
+
+    // Mostrar el tiempo equivalente
+    Escribir "Tiempo equivalente: ", horas, " horas, ", minutos, " minutos, ", segundos, " segundos"
+FinAlgoritmo
